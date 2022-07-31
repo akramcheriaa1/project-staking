@@ -1,0 +1,38 @@
+@use '../../styles/vars';
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  background: vars.$color2;
+  padding: vars.$gutter;
+  border-radius: 5px;
+  -webkit-box-shadow: inset 1px 1px 5px #fff;
+  box-shadow: inset 1px 1px 5px #fff;
+  border: 1px solid rgba(0,0,0,.2);
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    &__stake {
+      display: flex;
+      background-color: vars.$color3;
+      padding: 0.5em;
+      margin-bottom: vars.$halfGutter;
+      &__input {
+        color: #EEE;
+        background: none;
+        border: none;
+        
+      }
+    }
+    &__btn {
+      color: #EEE;
+      background-color: vars.$color3;
+      padding: 1em;
+      border: none;
+      border-radius: 5px;
+      -webkit-box-shadow: inset 1px 1px 5px #fff;
+      box-shadow: inset 1px 1px 5px #fff;
+    }
+  }
+}
