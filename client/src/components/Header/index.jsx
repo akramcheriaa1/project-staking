@@ -48,7 +48,7 @@ const Header = () => {
   return (
     <div className={styles.header__container}>
       <header className={styles.header}>
-        <h1 className={styles.header__title}>Stacking</h1>
+        <h1 className={styles.header__title}>Staking</h1>
         <div>
         {mmInstalled && !mmConnected &&
           <button
@@ -65,7 +65,7 @@ const Header = () => {
         }
         {mmInstalled && mmConnected &&
           <div>
-            <p>{`Address : ${userAddress.slice(0,6)}...${userAddress.slice(-5)}`}</p>
+            <p className={styles.header__btn}>{`Address : ${userAddress.slice(0,6)}...${userAddress.slice(-5)}`}</p>
           </div>
           
         }
